@@ -2,27 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="./resources/css/reset.css">
     <link type="text/css" rel="stylesheet" href="./resources/css/style.css">
     <title>Tea Cozy</title>
   </head>
+
+
   <body>
-    <header>
+    <header class="">
       <div class="logo">
-        <img src="./resources/images/img-tea-cozy-logo.png" alt="Tea Cozy logo">
+        <img class="logo-dimensions" src="./resources/images/img-tea-cozy-logo.png" alt="Tea Cozy logo">
       </div>
 
       <nav class="nav">
-        <a href="#mission">Mission</a>
-        <a href="#featured-tea">Featured Tea</a>
-        <a href="#locations">Locations</a>
+        <a class="links" href="#mission">Mission</a>
+        <a class="links" href="#featured-tea">Featured Tea</a>
+        <a class="links" href="#locations">Locations</a>
       </nav>
 
     </header>
 
 
     <main>
-      <section id="mission" class="mission">
-        <!-- <img src="./resources/images/img-mission-background.jpg" alt="pot of flower petals"> -->
+      <section id="mission" class="flex-container">
+
         <div class="mission-text">
           <h2>Our Mission</h2>
           <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
@@ -30,10 +33,14 @@
 
       </section>
 
-      <section id="featured-tea">
+      <section id="featured-tea" class="flex-container">
 
-        <h2>Tea of the Month</h2>
-        <h4>What's Steeping at The Tea Cozy?</h4>
+        <div class="mission-text">
+          <h2>Tea of the Month</h2>
+          <h4>What's Steeping at The Tea Cozy?</h4>
+        </div>
+
+
 
         <div class="img-display">
           <img class="tea" src="./resources/images/img-berryblitz.jpg" alt="Fall berry blitz tea">
@@ -45,28 +52,27 @@
 
       </section>
 
-      <section id="locations">
-        <img src="./resources/images/img-locations-background.jpg" alt="a cup of tea looking out the window">
+      <section id="locations" class="flex-container">
 
-        <div class="locations">
+        <div class="address">
           <h3>Downtown</h3>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>384 West 4th St</p>
+          <p>Suite 108</p>
+          <p>Portland, Maine</p>
         </div>
 
-        <div class="locations">
+        <div class="address">
           <h3>East Bayside</h3>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>3433 Phisherman's Avenue</p>
+          <p>(Northwest Corner)</p>
+          <p>Portland, Maine</p>
         </div>
 
-        <div class="locations">
+        <div class="address">
           <h3>Oakdale</h3>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>515 Crescent Avenue</p>
+          <p>Second Floor</p>
+          <p>Portland, Maine</p>
         </div>
 
       </section>
