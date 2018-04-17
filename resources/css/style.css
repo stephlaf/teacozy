@@ -55,7 +55,7 @@ main {
 .flex-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	/* padding-top: 90px; */
 }
@@ -96,7 +96,8 @@ main {
 
 #locations {
 	width: 1200px;
-	height: 500px;
+	height: 590px;
+	margin-top: 180px;
 	background-image: url("../images/img-locations-background.jpg");
 }
 
@@ -106,13 +107,15 @@ main {
 
 .address {
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: wrap column;
 	justify-content: center;
 	align-items: center;
 	width: 300px;
 	height: 300px;
+	margin: 15px 20px;
 	opacity: 1;
-	border: 1px solid red;
+	background-color: black;
+	/* border: 1px solid red; */
 }
 
 .img-display {
