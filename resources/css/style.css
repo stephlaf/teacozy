@@ -9,13 +9,18 @@ body {
 
 header {
 	display: flex;
-	justify-content:
+	justify-content: space-between;
   position: fixed;
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
 	background-color: black;
 	top: 0;
+	/* z-index: -1; */
+}
+
+section {
+	padding-top: 90px;
 }
 
 .logo {
@@ -29,10 +34,9 @@ header {
 }
 
 .nav {
-	display: inline-flex;
+	display: flex;
   text-align: right;
 	align-items: center;
-
 }
 
 .links {
@@ -41,39 +45,63 @@ header {
 	margin: 0px 15px;
 }
 
-
-
-
-.mission-text {
-	display: flex;
+main {
+	display: inline-flex;
+	flex-direction: column;
 	align-items: center;
-	background-color: black;
-	width: 100%;
+	padding-top: 69px;
 }
 
 .flex-container {
-	display: inline-flex;
-	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	/* padding-top: 90px; */
+}
+
+.text {
+	background-color: black;
+	width: 100%;
 }
 
 #mission {
 	width: 1200px;
 	height: 700px;
-	border: 3px solid white;
   background-image: url("../images/img-mission-background.jpg");
 }
 
 #featured-tea {
 	width: 1000px;
-		border: 3px solid white;
+  height: 700px;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.tea {
+	width: 300px;
+	height: 200px;
+	padding-bottom: 10px;
+}
+
+.vignettes{
+	flex-flow: wrap row;
+}
+
+.padding{
+	padding: 15px;
 }
 
 #locations {
-	background-image: url("../images/img-locations-background.jpg");
 	width: 1200px;
 	height: 500px;
-  border: 3px solid white;
+	background-image: url("../images/img-locations-background.jpg");
+}
+
+.row {
+	flex-direction: row;
 }
 
 .address {
@@ -90,12 +118,8 @@ header {
 .img-display {
 	/* display: inline-flex; */
 	/* flex-wrap: wrap; */
+}
 
-}
-.tea {
-	width: 300px;
-	height: 200px;
-}
 
 #contact {
 	height: 200px;
